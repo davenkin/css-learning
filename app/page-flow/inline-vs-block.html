@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        .border-red {
+            border: 1px solid red;
+        }
+
+        .border-blue {
+            border: 1px solid blue;
+
+        }
+
+        .border-green {
+            border: 1px solid green;
+        }
+
+        #alink {
+            /*width: 200px;*/
+            height: 200px;
+            /*float:right;*/
+        }
+
+        #aspan {
+            /*float:right;*/
+            width: 100%;
+            /*display: block;*/
+        }
+
+        #ainput {
+            /*width: 100%;*/
+            /*height: 200px;*/
+            /*display:block;*/
+        }
+        #adiv {
+            /*float: right;*/
+            /*display: inline-block;*/
+            /*text-align: center;*/
+            line-height: 50px;
+        }
+        body {
+            /*text-align: justify;*/
+        }
+
+        h1,h2 {
+            font-weight:normal;
+            margin-top: 1em;
+            font-size: 2em;
+        }
+
+        #div {
+            font-size:2em;
+        }
+    </style>
+    <script>
+        document.body.appendChild(
+                document.createTextNode("textarea is "
+                        + window.getComputedStyle(document.getElementById("im1")).display
+                        + " by default"));
+    </script>
+</head>
+<body>
+
+<a id="alink" class="border-red">这是一个超链接</a>
+<span id="aspan" class="border-blue">这是一M<div style="display: inline">dfdsfsd</div>个span</span>
+<input id="ainput" type="text" class="border-green" placeholder="">
+<div id="adiv"  class="border-red">这是个div<div>嵌套div</div></div>
+<div   class="border-red"><span>这个是span</span><a>这是个div</a></div>
+<script async src="//jsfiddle.net/235vc/embed/"></script>
+<div>dfsad<h1>fasdfds</h1></div>
+
+<h1 id="h1">
+    default h1 is em
+</h1>
+
+<h2 id="h2">
+    default h1 is em
+</h2>
+<div id="div">
+    div 2em, then the same size as above h1
+    <h1 id="divh1">
+        default h1 is 2m, then 2*2=4em
+    </h1>
+</div>
+</body>
+</html>
+
+<body>
