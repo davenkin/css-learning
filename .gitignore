@@ -9,3 +9,4 @@ tmp.json
 .shelf
 tmp.html
 .idea
+node_modules
